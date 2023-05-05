@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Keypad from '../components/Keypad';
+import calculate from '../components/logic/calculate';
 
 function Calculator() {
-  const handleInput = (value) => value;
+  const [total, setTotal] = useState(null);
+  const [next, setNext] = useState(null);
+  const [operation, setOperation] = useState(null);
+  const handleInput = (value) => {
+    const result = calculate({ total, next, operation }, value);
+    setTotal(result.total);
+    setNext(result.next);
+    setOperation(result.operation);
+  };
   return (
     <div className="calculator-wrapper">
       <div className="app">
         <div className="keypad">
-          <p className="result">{0 || 0 || 0}</p>
+          <p className="result">{next || total || 0}</p>
           <div>
             <button className="numbers" onClick={(e) => handleInput(e.target.textContent)} type="button" id="clear">AC</button>
             <button className="numbers" onClick={(e) => handleInput(e.target.textContent)} type="button" id="backspace">+/-</button>
