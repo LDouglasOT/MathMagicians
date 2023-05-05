@@ -19,7 +19,6 @@ function App() {
         }
       });
       if (response.status == 200) {
-        console.log(response)
         setQuote(response.data[0].quote);
         setLoading(false);
       }

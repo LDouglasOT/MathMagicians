@@ -27,7 +27,7 @@
 # 📖<a name="about-project">Math Magician</a>
 
 
-***In this activity you will set up a Calculator project for the Math Magician SPA, using React.***
+*** Math magicians is a project that allows users to do mathematical calculations and show amazing quotes ***
 
 
 ## 🛠 Built With <a name="built-with">Vscode, Github</a>
@@ -66,9 +66,6 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -91,7 +88,8 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```
-gh repo clone Chaseknis/math_magician_react
+git clone https://github.com/LDouglasOT/MathMagicians.git
+
 ```
 
 ### Install
@@ -101,8 +99,8 @@ To obtain a copy of this repository, clone it to your desired folder:
 Commands: 
 
 ```sh
-  gh repo clone Chaseknis/math_magician_react
-  cd leaderboard
+  git clone https://github.com/LDouglasOT/MathMagicians.git
+  cd MathMagicians
   npm install -y
 ```
 <br><br>
@@ -145,7 +143,7 @@ To run tests, run the following command:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 👥 Authors <a name="authors">Innocent N.</a>
+## 👥 Authors <a name="authors">LdouglasOT.</a>
 
 
 👤 **Author**
@@ -159,8 +157,6 @@ To run tests, run the following command:
 
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> I'll add the following section to the webpage.
 
 - [ ] **[Making simple math calculations]()**
 
