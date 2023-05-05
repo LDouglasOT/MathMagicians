@@ -147,9 +147,9 @@ To run tests, run the following command:
 
 👤 **Author**
 
-- GitHub: [@LdouglasOT](https://github.com/LdouglasOT)
-- Twitter: [@LdouglasOT](https://twitter.com/LdouglasOT)
-- LinkedIn: [LdouglasOT](https://www.linkedin.com/in/LdouglasOT/)
+- GitHub: [@LdouglasOT](https://github.com/LDouglasOT)
+- Twitter: [@LdouglasOT](https://twitter.com/douglas_luzinda)
+- LinkedIn: [LdouglasOT](https://www.linkedin.com/in/douglas-luzinda/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -168,7 +168,7 @@ To run tests, run the following command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/LdouglasOT/math_magician_react/issues).
+Feel free to check the [issues page](https://github.com/LDouglasOT/MathMagicians/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
