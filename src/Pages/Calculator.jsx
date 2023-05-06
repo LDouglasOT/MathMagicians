@@ -1,19 +1,51 @@
-import React, { useState } from 'react';
+/* eslint-disable */
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import Keypad from '../components/Keypad';
 import calculate from '../components/logic/calculate';
+import Quote from '../components/Quote';
 
 function Calculator() {
   const [total, setTotal] = useState(null);
   const [next, setNext] = useState(null);
   const [operation, setOperation] = useState(null);
+  const [quote, setQuote] = useState(0);
+  const [loading, setLoading] = useState(false);
+  const [loadingmessage, setLoadingmessage] = useState('Loading quote...........');
+
   const handleInput = (value) => {
     const result = calculate({ total, next, operation }, value);
     setTotal(result.total);
     setNext(result.next);
     setOperation(result.operation);
   };
+
+  const getquote = async () => {
+    try {
+      setLoading(true);
+      const apiKey = 'pfJAGEde3i4WWUdixGn67Q==tZMKuoN3cSMtKp04';
+      const response = await axios.get('https://api.api-ninjas.com/v1/quotes?category=happiness', {
+        headers: {
+          'X-Api-Key': apiKey,
+        },
+      });
+      if (response.status == 200) {
+        setQuote(response.data[0].quote);
+        setLoading(false);
+      }
+    } catch (err) {
+      setLoading(true);
+      setLoadingmessage(err.message);
+    }
+  };
+  useEffect(() => {
+    getquote();
+  }, []);
   return (
     <div className="calculator-wrapper">
+      <Quote quote={loading ? loadingmessage : quote} />
+      <br/>
+      <br/>
       <div className="app">
         <div className="keypad">
           <p className="result">{next || total || 0}</p>
