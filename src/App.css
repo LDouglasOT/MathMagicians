@@ -1,11 +1,9 @@
 .app {
   width: 30%;
-
 }
 
 .keypad {
   width: 100%;
-
 }
 
 .numbers {
@@ -119,8 +117,4 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.HomeTag{
-  margin-right: 20;
-  color: aqua;
 }
