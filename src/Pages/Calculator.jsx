@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Keypad from '../components/Keypad';
 import calculate from '../components/logic/calculate';
-import Quote from '../components/Quote';
 
 function Calculator() {
   const [total, setTotal] = useState(null);
@@ -17,7 +16,7 @@ function Calculator() {
 
   return (
     <div className="calculator-wrapper">
-      <Quote />
+      <h1 className="HomeTag">Lets Do Some Math!</h1>
       <div className="app">
         <div className="keypad">
           <p className="result">{next || total || 0}</p>
