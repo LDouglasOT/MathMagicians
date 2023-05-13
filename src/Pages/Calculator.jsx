@@ -6,14 +6,17 @@ function Calculator() {
   const [total, setTotal] = useState(null);
   const [next, setNext] = useState(null);
   const [operation, setOperation] = useState(null);
+
   const handleInput = (value) => {
     const result = calculate({ total, next, operation }, value);
     setTotal(result.total);
     setNext(result.next);
     setOperation(result.operation);
   };
+
   return (
     <div className="calculator-wrapper">
+      <h1 className="HomeTag">Lets Do Some Math!</h1>
       <div className="app">
         <div className="keypad">
           <p className="result">{next || total || 0}</p>
